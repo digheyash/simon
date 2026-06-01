@@ -10,6 +10,28 @@ body {
   color: #FEF2BF;
 }
 
+#level-title {
+  /* Prevent the text from wrapping to a second line */
+  /*white-space: nowrap; */
+  /* Apply the animation: Name, duration, timing function, and repetition */
+  animation: scrollText 10s linear infinite; 
+  /* Optional styling */
+  /*.blue: #333; */
+  margin: 0; 
+}
+
+/* 3. The Animation Keyframes */
+@keyframes scrollText {
+  0% {
+    /* Start off-screen to the right */
+    transform: translateX(-10%); 
+  }
+  100% {
+    /* End completely off-screen to the left */
+    transform: translateX(10%); 
+  }
+}
+
 .container {
   display: block;
   width: 50%;
